@@ -1,0 +1,7 @@
+export const actionTypes = {
+    ADD_MOVIES: 'ADD_MOVIES',
+    ADD_FAVORITE: 'ADD_FAVORITE',
+    REMOVE_FAVORITE: 'REMOVE_FAVORITE',
+    ADD_USER: 'ADD_USER',
+    ADD_COMMENT: 'ADD_COMMENT',
+};
