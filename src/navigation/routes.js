@@ -1,14 +1,14 @@
-import React from 'react'
+import React from 'react';
 import {
     // BrowserRouter as Router,
     Switch,
     Route,
     // Link,
-} from 'react-router-dom'
+} from 'react-router-dom';
 
-import Home from '../pages/Home.js'
-import FilmPage from '../pages/FilmPage.js'
-import Private from '../pages/Private.js'
+import Home from '../pages/Home.js';
+import FilmPage from '../pages/FilmPage.js';
+import Private from '../pages/Private.js';
 
 const Routes = () => {
     return (
@@ -26,7 +26,7 @@ const Routes = () => {
                 />
             </Switch>
         </div>
-    )
-}
+    );
+};
 
-export default Routes
+export default Routes;

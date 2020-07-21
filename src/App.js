@@ -7,17 +7,18 @@ import Auth0Provider from './contexts/auth0-context';
 
 import { saveState } from './helpers/localStorage.js';
 
-import './App.css';
+import './App.scss';
 import 'antd/dist/antd.css';
 
-store.subscribe(() => {
-    saveState({
-        favoriteMovies: store.getState().favoriteMovies,
-        favoriteMoviesIDs: store.getState().favoriteMoviesIDs,
-        users: store.getState().users,
-        comments: store.getState().comments,
-    });
-});
+// store.subscribe(() => {
+//     saveState({
+//         favoriteMovies: store.getState().movies,
+//         favoriteMovies: store.getState().favoriteMovies,
+//         favoriteMoviesIDs: store.getState().favoriteMoviesIDs,
+//         users: store.getState().users,
+//         comments: store.getState().comments,
+//     });
+// });
 
 class App extends Component {
     render() {

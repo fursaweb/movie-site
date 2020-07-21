@@ -6,7 +6,7 @@ const persistedState = loadState();
 
 export const store = createStore(
     moviesReducer,
-    persistedState,
+    // persistedState,
     window.__REDUX_DEVTOOLS_EXTENSION__ &&
         window.__REDUX_DEVTOOLS_EXTENSION__()
 );

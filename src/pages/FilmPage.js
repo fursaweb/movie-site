@@ -19,29 +19,6 @@ const FilmPage = props => {
 
     const [movieData, setMovieData] = useState(null);
 
-    // const db = firebase.firestore();
-    // db.settings({
-    //     timestampsInSnapshots: true,
-    // });
-    // db.collection('users')
-    //     .add({
-    //         id: '154',
-    //         name: 'Gelo',
-    //     })
-    //     .then(function(docRef) {
-    //         console.log('Document written with ID: ', docRef.id);
-    //     })
-    //     .catch(function(error) {
-    //         console.error('Error adding document: ', error);
-    //     });
-    // db.collection('users')
-    //     .get()
-    //     .then(querySnapshot => {
-    //         querySnapshot.forEach(user => {
-    //             console.log(`${user.id} => ${user.data()}`);
-    //         });
-    //     });
-
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch(
