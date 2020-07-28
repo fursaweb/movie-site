@@ -1,3 +1,16 @@
+body {
+    color: #000;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    color: #000;
+}
+
 .l-wrapper {
     max-width: 1180px;
     margin: 0 auto;
@@ -115,4 +128,60 @@
     top: -10px;
     right: -10px;
     background: #fff;
+}
+
+.poster {
+    border: 3px solid #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+}
+
+.comment {
+    margin-bottom: 10px;
+    max-width: 600px;
+}
+
+.comment__author {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.comment__box {
+    display: flex;
+    align-items: flex-start;
+}
+
+.comment__content {
+    margin-right: 10px;
+    font-size: 15px;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 3px;
+}
+
+.comment-form {
+    max-width: 400px;
+    margin-bottom: 50px;
+
+    input,
+    textarea {
+        font-size: 14px;
+    }
+}
+
+.rating-box {
+    font-size: 18px;
+    font-weight: 900;
+    color: #000;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rating-icon {
+    max-width: 70px;
+    margin-right: 10px;
 }

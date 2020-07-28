@@ -1,27 +1,42 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
+//Components
+import IconButton from '@material-ui/core/IconButton';
+import DeleteIcon from '@material-ui/icons/Delete';
+
 const Comments = props => {
     const commentsList = useSelector(state => state.comments);
-    console.log(commentsList);
+
     if (commentsList[props.id]) {
         const comments = commentsList[props.id];
-        console.log(comments);
+
         return (
             <div>
-                {comments.map(item => {
+                {comments.map(comment => {
                     return (
-                        <p>
-                            <strong>{item.name} </strong>
-                            <span>{item.comment}</span>
-                            <button>delete</button>
-                        </p>
+                        <div className="comment">
+                            <strong className="comment__author">
+                                {comment.name}{' '}
+                            </strong>
+                            <div className="comment__box">
+                                <p className="comment__content">
+                                    {comment.comment}
+                                </p>
+                                <IconButton
+                                    aria-label="delete"
+                                    size="small"
+                                >
+                                    <DeleteIcon fontSize="small" />
+                                </IconButton>
+                            </div>
+                        </div>
                     );
                 })}
             </div>
         );
     }
-    return <h3>No comments yet</h3>;
+    return <h3 className="h3">No comments yet</h3>;
 };
 
 export default Comments;

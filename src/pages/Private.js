@@ -2,12 +2,10 @@ import React, { useContext } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Layout, Card } from '../components';
-import { Auth0Context } from '../contexts/auth0-context';
 
 import Grid from '@material-ui/core/Grid';
 
 const Private = () => {
-    const { user } = useContext(Auth0Context);
     const movies = useSelector(state => state.favoriteMovies);
 
     return (
@@ -18,7 +16,7 @@ const Private = () => {
                     {/* {user.picture && (
                         <img src={user.picture} alt="My Avatar" />
                     )} */}
-                    {user.name}
+                    {/* {user.name} */}
                 </p>
                 <Grid container spacing={2}>
                     {movies &&

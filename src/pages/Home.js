@@ -9,7 +9,7 @@ import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
 
 //Helpers
-import { URL, API_KEY, fetchMovies } from '../helpers/API.js';
+import { fetchMovies } from '../helpers/API.js';
 
 const Home = () => {
     const [query, setQuery] = useState('');
@@ -88,7 +88,7 @@ const Home = () => {
                         })}
                 </Grid>
 
-                {loading ? (
+                {/* {loading ? (
                     <h2>Loading</h2>
                 ) : (
                     <Grid container spacing={2}>
@@ -113,7 +113,7 @@ const Home = () => {
                                 );
                             })}
                     </Grid>
-                )}
+                )} */}
             </div>
         </Layout>
     );
